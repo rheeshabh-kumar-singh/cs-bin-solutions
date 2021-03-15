@@ -36,6 +36,13 @@ function helloGoodbye() {
 function brokenRecord() {
   setInterval(() => console.log('hi again'), 1000);
 }
+//seems like above solution is not working, try the solution given below
+function brokenRecord() {
+  // ADD CODE HERE
+  setTimeout(function (){
+             console.log('hi again');
+    				 brokenRecord();
+             },1000);
 // Uncomment the following line to check your work!
 // brokenRecord(); // should log (every second): hi again
 
